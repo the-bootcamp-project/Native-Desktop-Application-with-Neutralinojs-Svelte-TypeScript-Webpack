@@ -13,8 +13,8 @@
 
 - **Bootcamp Projects**
   - [Bootcamp Project](https://bootcamp-project.com ":target=_blank")
-  - [Browser Extension](https://webext-svelte.rtfm.page ":target=_blank")
-  - [Desktop Application](https://desktop-app-electron.rtfm.page ":target=_blank")
-  - [Mobile Application](https://mobile-app-flutter.rtfm.page ":target=_blank")
-  - [Web-Application](https://web-app-ipfs.rtfm.page ":target=_blank")
+  - [Web-Application](https://web-application.rtfm.page ":target=_blank")
+  - [Browser Extension](https://browser-extension.rtfm.page ":target=_blank")
+  - [Desktop Application](https://native-desktop.rtfm.page ":target=_blank")
+  - [Mobile Application](https://native-mobile.rtfm.page ":target=_blank")
   - [Python Package](https://howto-python-package.rtfm.page ":target=_blank")
