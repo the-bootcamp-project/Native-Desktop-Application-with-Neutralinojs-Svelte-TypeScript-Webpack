@@ -19,9 +19,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "4.0.0"
-  },
 	"browserslist": [
 		"defaults"
 	],
