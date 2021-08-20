@@ -1,0 +1,36 @@
+{
+    "extensionName": {
+        "message": "Browser Extension Boilerplate",
+        "description": "Name of the extension."
+    },
+
+    "extensionDescription": {
+        "message": "Bootcamp Project - Browser Extension Boilerplate",
+        "description": "Description of the add-on."
+    },
+
+    "extensionShortName": {
+        "message": "Browser Extension",
+        "description": "Short Name of the add-on."
+    },
+
+    "extensionIcon": {
+        "message": "./images/logo_shield.svg",
+        "description": "Icons of the add-on."
+    },
+
+    "extensionAuthor": {
+        "message": "Bootcamp contributors <contributors@bootcamp-project.com>",
+        "description": "Author of the add-on."
+    },
+
+    "extensionHomepage": {
+        "message": "https://bootcamp-project.com/",
+        "description": "Homepage of the add-on."
+    },
+
+    "extensionRepository": {
+        "message": "https://gitlab.com/the-bootcamp-project/boilerplates/browser-extension",
+        "description": "Repository of the add-on."
+    }
+}

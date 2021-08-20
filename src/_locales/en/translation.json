@@ -1,0 +1,67 @@
+{
+    "AppTitle": "Bookmalyzer!",
+
+    "PageDashboardTitle": "Dashboard",
+    "PageBookmarkTitle": "Bookmarks",
+    "PageSettingsTitle": "Settings",
+
+    "ActionButtonNext": "next",
+    "ActionButtonBack": "back",
+    "ActionButtonBackup": "Backup",
+
+    "LoadingCardHeader": "Display is loaded...",
+
+    "ErrorHeaderHeadline": "Sorry, that shouldn't have happened.",
+
+    "WelcomeHeaderHeadline1": "Welcome!",
+    "WelcomeHeaderHeadline2": "Settings...",
+
+    "WelcomeNewUserHeadline": "Welcome to Bookmalyzer",
+    "WelcomeNewUserOrRestor": "Do you want to create a new profile or restore an existing one?",
+    "WelcomeNewUserCreateUUID": "Create new profile",
+    "WelcomeNewUserIDCreated": "A new profile ID has been created, it is really important to keep it safe. The ID is mandatory for later backup restores.",
+    "WelcomeNewUserOrStartRestor": "Restore backup",
+
+    "BookmarkDisclaimerHeadline": "No bookmarks known",
+    "BookmarkDisclaimerDescription": "In order to manage the bookmarks, they must be enabled for analysis.",
+    "BookmarkDisclaimerText": "Don't worry, your bookmarks and all data will stay on your PC and will NOT be transferred to the Internet.",
+    "BookmarkDisclaimerAllButton": "Add all bookmarks!",
+    "BookmarkDisclaimerSomeButton": "Choose bookmarks...",
+    "BookmarkSelectionHeadline": "Select and add bookmarks",
+    "BookmarkNoSelected": "No bookmarks selected",
+    "BookmarkSelectedPart1": "Add ",
+    "BookmarkSelectedPart2": " bookmarks",
+
+    "BookmarkSucces": "Total",
+    "BookmarkDescriptionSucces": "Bookmarks total",
+    "BookmarkInfo": "Information",
+    "BookmarkDescriptionInfo": "Bookmarks with information",
+    "BookmarkWarning": "Warnings",
+    "BookmarkDescriptionWarning": "Bookmarks with warnings",
+    "BookmarkError": "Errors",
+    "BookmarkDescriptionError": "Bookmarks with errors",
+
+    "BookmarkShared": "Shared",
+    "BookmarkGlobal": "Globale",
+    "BookmarkOptions": "Optionen",
+
+    "ActionsSelection": "Actions",
+    "CrawlerStartTaskButton": "Add crawler job",
+
+    "UsageDataHeadline": "Anonymous usage data",
+    "UsageDataDescription": "At various parts of this application need to process and display various anonymous usage data, for the bookmarks statistics.",
+    "UsageDataShortDisclaimer": "Please also provide us with this data for the further development of the application! The data will only be transferred anonymously and encrypted and serve to improve the applications to your needs.",
+    "UsageDataRequired": "Required",
+    "UsageDataOptional": "Optional",
+    "UsageDataJustificationRequired": "Operation relevant",
+    "UsageDataJustificationOptional": "Helps the development",
+    "UsageDataPreview": "View current usage data",
+
+    "PopupWelcomSettingsUndoneShort": "It is not yet time to do that",
+    "PopupWelcomSettingsUndoneLong": "This menu is only available when all necessary settings have been made on the Welcome page.",
+    "PopupWelcomSettingsUndoneLink": "Welcome page",
+
+    "PopupUnknownTabNotification": "This website is unknown.",
+    "PopupUnknownTabNotificationDisplayURL": "Disable hint for this tab",
+    "PopupUnknownTabNotificationDisplayGenerall": "Disable all such hints"
+}
