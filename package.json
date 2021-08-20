@@ -1,11 +1,30 @@
 {
-  "name": "desktop-app-neutralinojs",
+  "name": "native-desktop-tbcp",
   "version": "0.0.1",
-  "description": "ASD",
-  "main": "index.js",
-  "repository": "https://gitlab.com/the-bootcamp-project/boilerplates/desktop-app-neutralinojs.git",
-  "author": "Bootcamp contributors <contributors@bootcamp-project.com>",
   "license": "MIT",
+  "description": "ASD",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Bootcamp contributors <contributors@bootcamp-project.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/the-bootcamp-project/boilerplates/native-desktop"
+  },
+  "contributors": [
+    "John Ollhorn <john@ollhorn.de> (https://ollhorn.de)"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+	"browserslist": [
+		"defaults"
+	],
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
