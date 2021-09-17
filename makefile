@@ -19,4 +19,4 @@ release:
 	neu build --release
 
 upload:
-	sudo neu update
+	neu update

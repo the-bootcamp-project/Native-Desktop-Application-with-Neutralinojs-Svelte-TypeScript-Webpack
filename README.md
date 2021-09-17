@@ -12,9 +12,9 @@
 
 ### 😎 Built With 😎
 
-- [Svelte](https://svelte.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
 - [Webpack](https://webpack.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Svelte](https://svelte.dev/)
 - [Neutralinojs](https://neutralino.js.org/)
 
 ## 📖 Getting Started 📖

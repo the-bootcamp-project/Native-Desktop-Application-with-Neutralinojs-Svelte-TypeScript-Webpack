@@ -1,42 +1,77 @@
 {
   "name": "native-desktop-tbcp",
-  "version": "0.0.1",
-  "license": "MIT",
-  "description": "ASD",
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
+	"version": "0.0.1",
+	"license": "MIT",
+	"private": true,
+	"description": "How to Build and Publish Native Desktop Application with Neutralinojs Svelte TypeScript Webpack",
+	"keywords": [
+		"How to",
+		"Build",
+		"Publish",
+		"Native",
+    "Desktop",
+    "Application",
+		"Neutralinojs",
+		"Svelte",
+		"TypeScript",
+		"Webpack",
+		"Boilerplate",
+		"Step-by-Step"
+	],
+	"repository": "https://gitlab.com/the-bootcamp-project/boilerplates/native-desktop.git",
   "author": "Bootcamp contributors <contributors@bootcamp-project.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/the-bootcamp-project/boilerplates/native-desktop"
-  },
   "contributors": [
     "John Ollhorn <john@ollhorn.de> (https://ollhorn.de)"
   ],
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"IE 10"
+	],
   "scripts": {
     "start": "node index.js"
   },
-	"browserslist": [
-		"defaults"
-	],
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "babel-loader": "^8.2.2",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.2.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "mini-css-extract-plugin": "^2.2.0",
-    "style-loader": "^3.2.1",
-    "svelte": "^3.42.1",
-    "svelte-loader": "^3.1.2",
-    "ts-loader": "^9.2.5",
-    "typescript": "^4.3.5",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0"
+		"@types/copy-webpack-plugin": "^8.0.1",
+		"@types/csp-html-webpack-plugin": "^3.0.2",
+		"@types/node": "^16.7.1",
+		"@types/speed-measure-webpack-plugin": "^1.3.4",
+		"@types/webextension-polyfill": "^0.8.0",
+		"@types/webpack-dev-server": "^3.11.5",
+		"@typescript-eslint/eslint-plugin": "^4.29.2",
+		"@typescript-eslint/parser": "^4.29.2",
+		"autoprefixer": "^10.3.1",
+		"copy-webpack-plugin": "^9.0.1",
+		"csp-html-webpack-plugin": "^5.1.0",
+		"css-loader": "^6.2.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.1",
+		"eslint-plugin-security": "^1.4.0",
+		"fork-ts-checker-webpack-plugin": "^6.3.2",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^5.3.2",
+		"postcss": "^8.3.6",
+		"postcss-loader": "^6.1.1",
+		"prettier": "^2.3.2",
+		"sass": "^1.38.0",
+		"sass-loader": "^12.1.0",
+		"speed-measure-webpack-plugin": "^1.5.0",
+		"style-loader": "^3.2.1",
+		"svelte": "^3.42.2",
+		"svelte-loader": "^3.1.2",
+		"svelte-preprocess": "^4.7.4",
+		"ts-loader": "^9.2.5",
+		"ts-node": "^10.2.1",
+		"typescript": "^4.3.5",
+		"webextension-polyfill": "^0.8.0",
+		"webextension-polyfill-ts": "^0.26.0",
+		"webpack": "^5.51.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+		"concurrently": "^6.2.1",
+		"cross-env": "^7.0.3"
   }
 }
