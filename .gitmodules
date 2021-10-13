@@ -1,0 +1,4 @@
+[submodule "svelte-components"]
+	path = src/components
+	url = https://gitlab.com/the-bootcamp-project/libraries/svelte-components.git
+	branch = main
