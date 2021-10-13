@@ -1,77 +1,88 @@
 {
-  "name": "native-desktop-tbcp",
+	"name": "entropedia-companion",
 	"version": "0.0.1",
-	"license": "MIT",
+	"license": "AGPL-3.0",
 	"private": true,
-	"description": "How to Build and Publish Native Desktop Application with Neutralinojs Svelte TypeScript Webpack",
+	"description": "A browser extension for the entrance to your Entropedia-Space",
 	"keywords": [
 		"How to",
 		"Build",
 		"Publish",
-		"Native",
-    "Desktop",
-    "Application",
-		"Neutralinojs",
+		"Browser",
+		"Extension",
+		"Web-Ext",
 		"Svelte",
 		"TypeScript",
 		"Webpack",
 		"Boilerplate",
 		"Step-by-Step"
 	],
-	"repository": "https://gitlab.com/the-bootcamp-project/boilerplates/native-desktop.git",
-  "author": "Bootcamp contributors <contributors@bootcamp-project.com>",
-  "contributors": [
-    "John Ollhorn <john@ollhorn.de> (https://ollhorn.de)"
-  ],
-	"browserslist": [
-		"last 1 version",
-		"> 1%",
-		"IE 10"
+	"repository": "https://gitlab.com/entropedia/webext.git",
+	"author": "Entropedia contributors <contributors@entropedia.org>",
+	"contributors": [
+		"John Ollhorn <john@ollhorn.de> (https://ollhorn.de)"
 	],
-  "scripts": {
-    "start": "node index.js"
-  },
-  "devDependencies": {
+	"browserslist": [
+		"defaults"
+	],
+	"main": "main.js",
+	"scripts": {
+		"dev-all": "webpack serve --node-env development --mode development --config webpack.electron.ts",
+		"********": "--------------------------------------------------------------------------------------------------------------",
+		"bundle-main": "webpack --node-env production --mode production --config webpack.main.ts --progress --no-hot --no-watch",
+		"bundle-preload": "webpack --node-env production --mode production --config webpack.preload.ts --progress --no-hot --no-watch",
+		"bundle-all": "webpack --node-env production --mode production --config webpack.electron.ts --progress --no-hot --no-watch && yarn bundle-main && yarn bundle-preload",
+		"*******": "--------------------------------------------------------------------------------------------------------------",
+		"build": "electron ./bundle/main.js",
+		"******": "--------------------------------------------------------------------------------------------------------------",
+		"measure-bundle": "webpack --node-env production --mode production --config webpack.electron.ts --progress --no-hot --no-watch --profile --json > stats.json && webpack-bundle-analyzer stats.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
 		"@types/copy-webpack-plugin": "^8.0.1",
 		"@types/csp-html-webpack-plugin": "^3.0.2",
-		"@types/node": "^16.7.1",
+		"@types/mini-css-extract-plugin": "^2.3.0",
+		"@types/node": "^16.10.2",
 		"@types/speed-measure-webpack-plugin": "^1.3.4",
-		"@types/webextension-polyfill": "^0.8.0",
-		"@types/webpack-dev-server": "^3.11.5",
+		"@types/tailwindcss": "^2.2.1",
+		"@types/webpack-dev-server": "^4.1.0",
 		"@typescript-eslint/eslint-plugin": "^4.29.2",
 		"@typescript-eslint/parser": "^4.29.2",
-		"autoprefixer": "^10.3.1",
+		"autoprefixer": "^10.3.6",
 		"copy-webpack-plugin": "^9.0.1",
 		"csp-html-webpack-plugin": "^5.1.0",
-		"css-loader": "^6.2.0",
+		"css-loader": "^6.3.0",
+		"electron": "^15.1.2",
 		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-prettier": "^3.4.1",
 		"eslint-plugin-security": "^1.4.0",
+		"eslint-plugin-svelte3": "^3.2.1",
 		"fork-ts-checker-webpack-plugin": "^6.3.2",
-		"html-loader": "^2.1.2",
 		"html-webpack-plugin": "^5.3.2",
-		"postcss": "^8.3.6",
+		"mini-css-extract-plugin": "^2.3.0",
+		"node-polyfill-webpack-plugin": "^1.1.4",
+		"postcss": "^8.3.8",
+		"postcss-cli": "^9.0.1",
 		"postcss-loader": "^6.1.1",
-		"prettier": "^2.3.2",
-		"sass": "^1.38.0",
-		"sass-loader": "^12.1.0",
 		"speed-measure-webpack-plugin": "^1.5.0",
-		"style-loader": "^3.2.1",
+		"style-loader": "^3.3.0",
 		"svelte": "^3.42.2",
+		"svelte-hot-loader": "^1.5.0",
 		"svelte-loader": "^3.1.2",
 		"svelte-preprocess": "^4.7.4",
+		"tailwindcss": "^2.2.16",
 		"ts-loader": "^9.2.5",
 		"ts-node": "^10.2.1",
 		"typescript": "^4.3.5",
-		"webextension-polyfill": "^0.8.0",
-		"webextension-polyfill-ts": "^0.26.0",
 		"webpack": "^5.51.1",
+		"webpack-bundle-analyzer": "^4.4.2",
 		"webpack-cli": "^4.8.0",
-		"webpack-dev-server": "^4.0.0"
-  },
-  "dependencies": {
-		"concurrently": "^6.2.1",
-		"cross-env": "^7.0.3"
-  }
+		"webpack-dev-server": "^4.0.0",
+		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"global": "^4.4.0",
+		"ipfs-core": "^0.11.1",
+		"libp2p-websockets": "^0.16.2",
+		"process": "^0.11.10"
+	}
 }

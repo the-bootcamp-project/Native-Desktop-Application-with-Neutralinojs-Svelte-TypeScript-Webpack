@@ -1,7 +1,0 @@
-{
-    "files.eol": "\n",
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    // Project-related
-}

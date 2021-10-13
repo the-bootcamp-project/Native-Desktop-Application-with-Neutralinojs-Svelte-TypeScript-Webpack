@@ -1,19 +1,17 @@
-/node_modules/
-/public/build/
+node_modules
 yarn.lock
 package-lock.json
-.DS_Store
 
 # Developer tools' files
 .lite_workspace.lua
 
-# Neutralinojs binaries and builds
-/bin
-/dist
+# binaries and builds
+bin
+bundle
+dist
+artifacts
 
-# Neutralinojs client (minified)
-neutralino.js
-
-# Neutralinojs related files
+# related files
+stats.json
 .storage
 *.log

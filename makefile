@@ -1,22 +1,27 @@
 #!/bin/bash
 SHELL := /bin/bash
 
-package=desktop-app-neutralinojs
+init:
+	@git submodule add -b main --name documentation https://gitlab.com/the-bootcamp-project/frameworks/docs.git docs
 
-install:
-	yarn install
+update:
+	@git submodule update --init
+	@git submodule update --recursive --remote --merge
 
-lint:
+clean:
+	@find . -name "node_modules" -type d -print0 | xargs -0 /bin/rm -rf
+	@find . -name "bundle" -type d -print0 | xargs -0 /bin/rm -rf
+	@find . -name "dist" -type d -print0 | xargs -0 /bin/rm -rf
+	@find . -name "artifacts" -type d -print0 | xargs -0 /bin/rm -rf
+	@find . -name "yarn.lock" -type f -print0 | xargs -0 /bin/rm -rf
+	@find . -name "yarn-error.log" -type f -print0 | xargs -0 /bin/rm -rf
+	@find . -name "stats.json" -type f -print0 | xargs -0 /bin/rm -rf
 
-sast:
+install: | clean
+	@yarn install
 
-unittests:
+bundle:
+	@yarn run bundle
 
-build:
-	neu build
-
-release:
-	neu build --release
-
-upload:
-	neu update
+build: | bundle
+	@concurrently "yarn:build-*"
