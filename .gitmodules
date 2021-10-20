@@ -2,10 +2,6 @@
 	path = docs
 	url = https://gitlab.com/the-bootcamp-project/frameworks/docs.git
 	branch = main
-[submodule "svelte-components"]
-	path = src/components
-	url = https://gitlab.com/the-bootcamp-project/libraries/svelte-components.git
-	branch = main
 [submodule "typescript"]
 	path = config/typescript
 	url = https://gitlab.com/the-bootcamp-project/configurations/ts.git
