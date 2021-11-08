@@ -1,0 +1,7 @@
+FROM tbcp/webext
+
+USER bootcamp
+
+RUN sudo apt update && sudo apt install -y build-essential git
+
+WORKDIR /home/bootcamp/

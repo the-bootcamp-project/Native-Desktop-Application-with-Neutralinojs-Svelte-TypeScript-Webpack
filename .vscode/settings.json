@@ -1,0 +1,26 @@
+{
+    "files.eol": "\n",
+    "files.associations": {
+        "*.scss": "postcss"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+    "markdownlint.config": {
+        "MD007": false,
+        "MD013": false,
+        "MD029": false,
+        "MD033": false,
+        "MD036": false,
+        "MD030": false,
+        "MD041": false
+    },
+    "prettier.printWidth": 120,
+    "prettier.trailingComma": "all",
+    "prettier.tabWidth": 4,
+    // Project-related
+}
