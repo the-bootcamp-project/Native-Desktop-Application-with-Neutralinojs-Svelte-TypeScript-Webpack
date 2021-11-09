@@ -1,5 +1,5 @@
 {
-	"name": "tbcp-native-desktop-framework",
+	"name": "tbcp-native-desktop",
 	"version": "0.0.1",
 	"license": "AGPL-3.0",
 	"private": true,
@@ -25,9 +25,9 @@
 	"browserslist": [
 		"defaults"
 	],
-	"main": "main.js",
+	"main": "./bundle/main.js",
 	"scripts": {
-		"dev-all": "webpack serve --node-env development --mode development --config webpack.electron.ts",
+		"dev": "webpack serve --node-env development --mode development --config webpack.electron.ts",
 		"********": "--------------------------------------------------------------------------------------------------------------",
 		"bundle-main": "webpack --node-env production --mode production --config webpack.main.ts --progress --no-hot --no-watch",
 		"bundle-preload": "webpack --node-env production --mode production --config webpack.preload.ts --progress --no-hot --no-watch",
@@ -55,14 +55,15 @@
 		"eslint": "^7.32.0",
 		"eslint-plugin-security": "^1.4.0",
 		"eslint-plugin-svelte3": "^3.2.1",
-		"global": "^4.4.0",
 		"fork-ts-checker-webpack-plugin": "^6.3.2",
+		"global": "^4.4.0",
 		"html-webpack-plugin": "^5.3.2",
 		"mini-css-extract-plugin": "^2.3.0",
 		"node-polyfill-webpack-plugin": "^1.1.4",
 		"postcss": "^8.3.8",
 		"postcss-cli": "^9.0.1",
 		"postcss-loader": "^6.1.1",
+		"process": "^0.11.10",
 		"speed-measure-webpack-plugin": "^1.5.0",
 		"style-loader": "^3.3.0",
 		"svelte": "^3.42.2",
@@ -77,17 +78,17 @@
 		"webpack-bundle-analyzer": "^4.4.2",
 		"webpack-cli": "^4.8.0",
 		"webpack-dev-server": "^4.0.0",
-		"process": "^0.11.10",
 		"webpack-merge": "^5.8.0"
 	},
 	"dependencies": {
 		"@bootcamp-project/svelte-components": "^0.0.18",
 		"@bootcamp-project/tailwind-config": "^0.0.8",
 		"@bootcamp-project/typescript-config": "^0.0.15",
-		"@bootcamp-project/webext-config": "^0.0.5",
 		"@bootcamp-project/webpack-config": "^0.0.9",
+		"@capacitor/cli": "^3.3.1",
+		"@capacitor/core": "^3.3.1",
+		"electron": "^15.1.2",
 		"ipfs-core": "^0.11.1",
-		"libp2p-websockets": "^0.16.2",
-		"electron": "^15.1.2"
+		"libp2p-websockets": "^0.16.2"
 	}
 }

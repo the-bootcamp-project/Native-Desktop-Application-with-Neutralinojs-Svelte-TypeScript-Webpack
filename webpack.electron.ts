@@ -22,11 +22,23 @@ const TEMPLATES_DIR = path.resolve(SRC_DIR,'templates')
 const mode = process.env['NODE_ENV'] ?? 'development'
 const isProduction = mode === 'production'
 
+const DEV_CSP = {
+    'script-src': [
+        "'self'",
+        "'unsafe-eval'"
+    ],
+    'style-src': ["'self'"]
+}
+const PROD_CSP = {
+    'script-src': ["'self'"],
+    'style-src': ["'self'"]
+}
+const CSP = isProduction ? PROD_CSP : DEV_CSP
+
 const renderer: Configuration = {
     context:    path.resolve(__dirname),
 
 	mode:       isProduction ? 'production' : 'development',
-    watch:      isProduction ? false: true,
 	devtool:    isProduction ? 'source-map' : 'eval-source-map',
 	target:     'electron-renderer',
 
@@ -113,7 +125,7 @@ const renderer: Configuration = {
         /* Application Pages */
         new HtmlWebpackPlugin({ title: 'index',  filename: 'index.html', template: path.resolve(TEMPLATES_DIR,'default.html'), chunks:['index'] }),
         /* Generate Content Security Policy Meta Tags */
-        new CspHtmlWebpackPlugin({ 'script-src': '', 'style-src': '' }),
+        new CspHtmlWebpackPlugin(CSP),
         new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: 'style.css' }),
         new CopyPlugin({ patterns: [
             /* Copy _locales */
