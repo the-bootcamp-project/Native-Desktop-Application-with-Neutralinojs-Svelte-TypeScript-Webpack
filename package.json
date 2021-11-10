@@ -25,8 +25,14 @@
 	"browserslist": [
 		"defaults"
 	],
-	"main": "./bundle/main.js",
+	"main": "./build/main.js",
 	"scripts": {
+		"clean": "rimraf ./node_modules build dist artifacts yarn.lock",
+		"pre:submodules:docs": "git submodule add -b main --name documentation https://gitlab.com/the-bootcamp-project/frameworks/docs.git docs",
+		"pre:submodules:i18n": "git submodule add -b main --name i18n https://gitlab.com/the-bootcamp-project/libraries/i18n.git i18n",
+		"pre:submodules:init": "git submodule update --init",
+		"pre:submodules:merge": "git submodule update --recursive --remote --merge",
+		"preinstall": "yarn run clean && yarn run pre:submodules:merge",
 		"dev": "webpack serve --node-env development --mode development --config webpack.electron.ts",
 		"********": "--------------------------------------------------------------------------------------------------------------",
 		"bundle-main": "webpack --node-env production --mode production --config webpack.main.ts --progress --no-hot --no-watch",
@@ -89,6 +95,7 @@
 		"@capacitor/core": "^3.3.1",
 		"electron": "^15.1.2",
 		"ipfs-core": "^0.11.1",
-		"libp2p-websockets": "^0.16.2"
+		"libp2p-websockets": "^0.16.2",
+		"rimraf": "^3.0.2"
 	}
 }

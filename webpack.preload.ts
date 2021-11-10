@@ -4,7 +4,7 @@ import type WebpackDev from 'webpack-dev-server'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
 const SRC_DIR       = path.resolve(__dirname,'src')
-const BUNDLE_DIR    = path.resolve(__dirname,'bundle')
+const BUNDLE_DIR    = path.resolve(__dirname,'build')
 const SCRIPT_DIR    = path.resolve(SRC_DIR,'scripts')
 
 const mode = process.env['NODE_ENV'] ?? 'development'

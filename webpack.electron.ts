@@ -12,7 +12,7 @@ import tailwind from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 const SRC_DIR       = path.resolve(__dirname,'src')
-const BUNDLE_DIR    = path.resolve(__dirname,'bundle')
+const BUNDLE_DIR    = path.resolve(__dirname,'build')
 const DEP_DIR       = path.resolve(__dirname,'node_modules')
 const TAILWIND_DIR  = path.resolve(DEP_DIR,'@bootcamp-project','tailwind-config')
 const PAGES_DIR     = path.resolve(SRC_DIR,'pages')
