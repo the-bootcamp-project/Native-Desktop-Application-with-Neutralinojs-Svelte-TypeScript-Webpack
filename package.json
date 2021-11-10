@@ -32,7 +32,6 @@
 		"pre:submodules:i18n": "git submodule add -b main --name i18n https://gitlab.com/the-bootcamp-project/libraries/i18n.git i18n",
 		"pre:submodules:init": "git submodule update --init",
 		"pre:submodules:merge": "git submodule update --recursive --remote --merge",
-		"preinstall": "yarn run clean && yarn run pre:submodules:merge",
 		"dev": "webpack serve --node-env development --mode development --config webpack.electron.ts",
 		"********": "--------------------------------------------------------------------------------------------------------------",
 		"bundle-main": "webpack --node-env production --mode production --config webpack.main.ts --progress --no-hot --no-watch",
