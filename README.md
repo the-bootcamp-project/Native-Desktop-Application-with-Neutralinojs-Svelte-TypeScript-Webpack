@@ -1,14 +1,31 @@
 <a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/images/logo.png" align="right" height="200" /></a>
 
-<h1 align="center">How to Build and Publish Native Desktop Application with Neutralinojs Svelte TypeScript Webpack</h1>
+<h1 align="center">How to Build and Publish Modern Native Desktop Application with Svelte TailwindCSS TypeScript and Webpack</h1>
 
-<div align="center">
-<img src="https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge" />
-</div>
+<div align="center"><img src="https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge" /></div>
 
 ## 👉 About 👈
 
-**Minimum Viable Product**:
+**Minimum Viable Product**: What is what we want?
+
+- [X] Modern Web techniques
+  - [X] Svelte Components
+    - [X] Storybook UI Testing and Presentation
+  - [X] TailwindCSS Styling
+  - [X] TypeScript Support
+  - [X] with Webpack bundeling
+- [X] a Static Application Security Code Analyzing
+  - [X] with ESLint (eslint-plugin-security)
+- [ ] A Test Driven Development approche
+  - [ ] with Mocha and Chai
+- [X] a on Board Documentation for our Users
+- [X] CI/CD
+  - [ ] Linting
+  - [ ] Building
+  - [ ] Packaging
+  - [ ] Deployment / Publishing
+
+---
 
 ### 😎 Built With 😎
 
