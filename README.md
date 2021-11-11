@@ -35,7 +35,7 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 
 ### 💪 Installation 💪
 
-## 🚀 Usage 🚀
+## 😏 Usage 😏
 
 ### 🤓 Static Analysis 🤓
 
