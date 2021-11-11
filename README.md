@@ -49,6 +49,7 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 
 ### 😎 Built With 😎
 
+- [electronjs](https://www.electronjs.org/)
 - [Webpack](https://webpack.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svelte](https://svelte.dev/)
@@ -80,3 +81,9 @@ See [LICENSE](https://frameworks.bootcamp-project.com/#/LICENSE) for more inform
 ## 🏆 Acknowledgements 🏆
 
 Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Modern Application Frameworks**:
+
+- [electronjs](https://www.electronjs.org/)
+- [electron/electron-quick-start](https://www.electronjs.org/docs/latest/tutorial/quick-start)
+- [Getting Started with Electron, Typescript, React and Webpack](https://www.sitepen.com/blog/getting-started-with-electron-typescript-react-and-webpack)
+- [Building a Desktop App with Electron, Create-React-App and Python](https://medium.com/geekculture/building-a-desktop-app-with-electron-create-react-app-and-python-e02bb1c47227)
+- [magnitus/electron-app](https://hub.docker.com/r/magnitus/electron-app)
