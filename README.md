@@ -9,21 +9,21 @@
 **Minimum Viable Product**: What is what we want?
 
 - [X] Modern Web techniques
+  - [X] TypeScript Support
   - [X] Svelte Components
     - [X] Storybook UI Testing and Presentation
   - [X] TailwindCSS Styling
-  - [X] TypeScript Support
   - [X] with Webpack bundeling
 - [X] a Static Application Security Code Analyzing
   - [X] with ESLint (eslint-plugin-security)
 - [ ] A Test Driven Development approche
   - [ ] with Mocha and Chai
-- [X] a on Board Documentation for our Users
-- [X] CI/CD
+- [X] Automation (CI/CD)
   - [ ] Linting
   - [ ] Building
   - [ ] Packaging
   - [ ] Deployment / Publishing
+- [X] a on Board Documentation for our Users
 
 ---
 
@@ -33,19 +33,48 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 
 ### ✋ Prerequisites ✋
 
+Ensure you have
+
+- [Node.js](https://nodejs.org) 10 or later installed
+- [Yarn](https://yarnpkg.com) v1 or v2 installed
+
 ### 💪 Installation 💪
+
+- `yarn install` to install dependencies.
 
 ## 😏 Usage 😏
 
-### 🤓 Static Analysis 🤓
+Then run the following:
 
-### 🧐 Unit Testing 🧐
+- `yarn run dev:chrome` to start the development server for chrome extension
+- `yarn run dev:firefox` to start the development server for firefox addon
+- `yarn run dev:opera` to start the development server for opera extension
+
+### 🤓 Linting 🤓
+
+### 🧐 Testing 🧐
 
 ### 🤩 Building 🤩
 
-### 🥳 Deployment 🥳
+Then run the following:
+
+- `yarn run build:chrome` to build chrome extension
+- `yarn run build:firefox` to build firefox addon
+- `yarn run build:opera` to build opera extension
+- `yarn run build` builds and packs extensions all at once to extension/ directory
+
+### 🥳 Publishing 🥳
 
 ## ⭐️ Features ⭐️
+
+- Cross Browser Support (Web-Extensions API)
+- Promise-based `browser.*` APIs webextension-polyfill
+- ES6 modules support
+- Node.js modules support
+- TypeScript by default
+- Svelte UI Library by default
+- Auto-publishing with auto-versioning and support for manual releases
+- Extensive configuration documentation
 
 ### 😎 Built With 😎
 
@@ -54,13 +83,17 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svelte](https://svelte.dev/)
 - [IPFS](https://ipfs.io/)
-- [docsify](https://docsify.js.org/)
 
 ## 📑 Changelog 📑
 
 See [CHANGELOG](CHANGELOG) for more information.
 
 ## 📋 Roadmap 📋
+
+- Smart reload
+- Auto packs browser specific build files
+- Auto-syncing options
+- Automatic build on code changes
 
 See the [open issues](https://gitlab.com/groups/the-bootcamp-project/frameworks/-/issues) for a list of proposed features (and known issues).
 
@@ -84,6 +117,3 @@ Thanks for these awesome resources that were used during the development of the 
 
 - [electronjs](https://www.electronjs.org/)
 - [electron/electron-quick-start](https://www.electronjs.org/docs/latest/tutorial/quick-start)
-- [Getting Started with Electron, Typescript, React and Webpack](https://www.sitepen.com/blog/getting-started-with-electron-typescript-react-and-webpack)
-- [Building a Desktop App with Electron, Create-React-App and Python](https://medium.com/geekculture/building-a-desktop-app-with-electron-create-react-app-and-python-e02bb1c47227)
-- [magnitus/electron-app](https://hub.docker.com/r/magnitus/electron-app)
