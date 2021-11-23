@@ -1,4 +1,4 @@
-<a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/images/logo.png" align="right" height="200" /></a>
+<a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/tbcp.svg" align="right" height="200" /></a>
 
 <h1 align="center">How to Build and Publish Modern Native Desktop Application with Svelte TailwindCSS TypeScript and Webpack</h1>
 
@@ -35,16 +35,27 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 
 Ensure you have
 
-- [Node.js](https://nodejs.org) 10 or later installed
-- [Yarn](https://yarnpkg.com) v1 or v2 installed
+- [Node.js](https://nodejs.org) 12.0.0 or later and
+- [Yarn](https://yarnpkg.com) v2 and
+- [electron](https://www.electronjs.org/) installed
+
+```bash
+sudo npm install -g yarn
+```
+
+```bash
+sudo yarn global add electron --prefix /usr/local
+# and, install other global dependencies
+sudo yarn global add webpack webpack-cli webpack-bundle-analyzer typescript cross-env concurrently rimraf --prefix /usr/local
+```
 
 ### 💪 Installation 💪
 
 - `yarn install` to install dependencies.
 
-## 😏 Usage 😏
+## 😏 Development 😏
 
-Then run the following:
+Run the following:
 
 - `yarn run dev:chrome` to start the development server for chrome extension
 - `yarn run dev:firefox` to start the development server for firefox addon
@@ -67,14 +78,12 @@ Then run the following:
 
 ## ⭐️ Features ⭐️
 
-- Cross Browser Support (Web-Extensions API)
-- Promise-based `browser.*` APIs webextension-polyfill
-- ES6 modules support
-- Node.js modules support
-- TypeScript by default
-- Svelte UI Library by default
-- Auto-publishing with auto-versioning and support for manual releases
-- Extensive configuration documentation
+- **ES6 / Node.js** modules support
+- **TypeScript** by default
+- [**Svelte** UI Library](https://gitlab.com/the-bootcamp-project/libraries/svelte-components) by default
+- **Tailwind CSS** by default
+- **Auto-publishing** with **auto-versioning** and support for manual releases
+- [Extensive configuration **documentation**](https://frameworks.bootcamp-project.com/#/browser_extension/index)
 
 ### 😎 Built With 😎
 
@@ -82,6 +91,7 @@ Then run the following:
 - [Webpack](https://webpack.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svelte](https://svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [IPFS](https://ipfs.io/)
 
 ## 📑 Changelog 📑
@@ -95,7 +105,7 @@ See [CHANGELOG](CHANGELOG) for more information.
 - Auto-syncing options
 - Automatic build on code changes
 
-See the [open issues](https://gitlab.com/groups/the-bootcamp-project/frameworks/-/issues) for a list of proposed features (and known issues).
+See the [open issues](https://gitlab.com/the-bootcamp-project/frameworks/native-desktop/-/issues) for a list of proposed features (and known issues).
 
 ## 🤝 Contribute 🤝
 
