@@ -1,8 +1,0 @@
-[submodule "documentation"]
-	path = docs
-	url = https://gitlab.com/the-bootcamp-project/frameworks/docs.git
-	branch = main
-[submodule "i18n"]
-	path = i18n
-	url = https://gitlab.com/the-bootcamp-project/libraries/i18n.git
-	branch = main
