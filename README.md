@@ -85,7 +85,7 @@ sudo apt-get update && sudo apt-get install yarn
 and
 
 ```bash
-sudo yarn global add cross-env --prefix /usr/local
+sudo yarn global add cross-env concurrently http-server --prefix /usr/local
 ```
 
 **Get the Boilerplate**
