@@ -29,10 +29,10 @@ const CSP = isProduction ? PROD_CSP : DEV_CSP
 
 const Config: webpack.Configuration | webpackdev.Configuration = {
     context:    path.resolve(ROOT_DIR),
-	target:     'electron-main',
+	target:     'electron-renderer',
 
     entry: {
-        main: path.resolve(SCRIPTS_DIR, 'main.ts')
+        renderer: path.resolve(SCRIPTS_DIR, 'renderer.ts')
     },
 
     output: { filename: '[name].js', path: DEST_DIR, clean: false },

@@ -1,10 +1,12 @@
 {
-	"extends": "@bootcamp-project/typescript-config/tsconfig.svelte.json",
-	"include": ["src/**/*","src/node_modules/**/*"],
+	"extends": "@bootcamp-project/typescript-config/dist/tsconfig.svelte.json",
+	"include": ["src/**/*"],
 	"exclude": ["node_modules/*"],
 	"compilerOptions": {
+        "types": ["node"], /* Specify type package names to be included without being referenced in a source file. */
+		"noImplicitAny": false, /* Enable error reporting for expressions and declarations with an implied `any` type.. */
 		"typeRoots": ["node_modules/@types"],	/* List of folders to include type definitions from. */
-		"declaration": false,		/* Generates corresponding '.d.ts' file. */
-		"declarationMap": false,	/* Generates a sourcemap for each corresponding '.d.ts' file. */
+		"declaration": false,					/* Generates corresponding '.d.ts' file. */
+		"declarationMap": false,				/* Generates a sourcemap for each corresponding '.d.ts' file. */
 	}
 }
