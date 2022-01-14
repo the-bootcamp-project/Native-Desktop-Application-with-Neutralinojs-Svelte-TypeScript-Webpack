@@ -1,6 +1,6 @@
 <script lang="ts">
 	import H1 from '@bootcamp-project/sveltelizer/Typography/H1.svelte'
-	let name: string = 'world'
+	let name = 'world'
 </script>
 
 <main>
