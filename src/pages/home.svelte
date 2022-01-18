@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H1 from '@bootcamp-project/sveltelizer/Typography/H1.svelte'
+	import { H1 } from '@bootcamp-project/sveltelizer/Content/Typography'
 	let name = 'world'
 </script>
 
