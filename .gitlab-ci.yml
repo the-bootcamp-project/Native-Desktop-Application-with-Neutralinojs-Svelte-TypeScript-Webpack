@@ -1,27 +1,51 @@
-stages:
-    - Environment
-    - Deployment
+image: "tbcp/nodejs:ubuntu"
 
-docker-build:
-  # Official docker image.
-  image: docker:latest
-  stage: Environment
-  services:
-    - docker:dind
-  before_script:
-    - echo $CI_DOCKERHUB_PASSWORD | docker login -u "$CI_DOCKERHUB_USER" --password-stdin $CI_DOCKERHUB_REGISTRY
+stages:
+  - Installation
+  - Linting
+  - Testing
+  - Building
+  - Publishing
+
+# This folder is cached between builds http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: Installation
   script:
-    - docker build --pull -t "index.docker.io/tbcp/electron:latest" .
-    - docker push "index.docker.io/tbcp/electron:latest"
-  only:
-    - main
+    - yarn install
+  artifacts:
+    paths: [node_modules]
+
+lint:fix:
+  stage: Linting
+  script:
+    - yarn run lint:fix
   allow_failure: true
 
-pages:
-  stage: Deployment
+test:unit:
+  stage: Testing
   script:
-    - mkdir ./public
+    - yarn run test:unit
+
+build:
+  stage: Building
+  script:
+    - yarn run build
+  artifacts:
+    paths: [build]
+  only:
+    - main
+
+pages:
+  stage: Publishing
+  before_script:
+    - mkdir -p ./public
+  script:
+    - yarn run publish
     - cp -r README.md public/
   artifacts:
-    paths: [public]
+    paths: [build,public]
     expire_in: 1 mins
