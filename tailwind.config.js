@@ -1,5 +1,7 @@
 module.exports = {
-    content: [],
+    content: [
+        './build/**/*.{html,js}'
+    ],
     presets: [],
     darkMode: 'media', // or 'class'
     theme: {
