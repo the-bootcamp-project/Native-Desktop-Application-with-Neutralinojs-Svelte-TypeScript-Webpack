@@ -20,6 +20,10 @@ const Config: webpack.Configuration | webpackdev.Configuration = {
         preload: path.resolve(SCRIPTS_DIR, 'preload.ts')
     },
 
+    resolve: {
+        extensions: ['.ts']
+    },
+
     output: { filename: '[name].js', path: DEST_DIR },
 
     module: {

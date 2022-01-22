@@ -20,6 +20,10 @@ const Config: webpack.Configuration | webpackdev.Configuration = {
         renderer: path.resolve(SCRIPTS_DIR, 'renderer.ts')
     },
 
+    resolve: {
+        extensions: ['.ts']
+    },
+
     output: { filename: '[name].js', path: DEST_DIR },
 
     module: {

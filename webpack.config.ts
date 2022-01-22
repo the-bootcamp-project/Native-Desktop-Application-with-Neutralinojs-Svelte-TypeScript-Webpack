@@ -36,6 +36,10 @@ const Config: webpack.Configuration | webpackdev.Configuration = {
         index: path.resolve(SRC_DIR, 'app.ts')
     },
 
+    resolve: {
+        extensions: ['.ts']
+    },
+
     output: { filename: '[name].js', path: DEST_DIR, clean: true },
 
     module: {
